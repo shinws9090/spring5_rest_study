@@ -35,17 +35,13 @@ public class MemberMapperTest {
 	}
 
 
-	@Test
-	public void testSelectByEmail() {
-		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
-		System.out.println(mapper.selectAll());
-	}
+	
 	@Test
 	public void testSelectStudentById() {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 
 		Member member = new Member();
-		member.setId((long) 1);
+		member.setId((long) 6);
 		Member selectStd = mapper.selectById(member.getId());
 		log.debug(selectStd.toString());
 		Assert.assertNotNull(selectStd);
@@ -61,28 +57,26 @@ public class MemberMapperTest {
 
 	@Test
 	public void test01InsertStudent() {
+
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
-
-		Member member = new Member("dssvvdf@sdfsd", "1111", "아아앙", LocalDateTime.now());
-
+		Member member = new Member("13@sdfsd", "1111", "아아이", LocalDateTime.now());
+		member.setId((long) 1);
 		int res = mapper.insert(member);
 		Assert.assertEquals(1, res);
-		System.out.println(mapper.selectById(member.getId()));
 	}
 	@Test
 	public void test02UpdateStudent() {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
-
-		Member member = new Member("dssvvdf@sdfsd", "2222", "아아앙", LocalDateTime.now());
+		Member member = new Member("13@sdfsd", "2222", "아아이", LocalDateTime.now());
+		member.setId((long) 1);
 		int res = mapper.update(member);
 		Assert.assertEquals(1, res);
-		System.out.println(mapper.selectById(member.getId()));
 
 	}
 	@Test
 	public void test03DeleteStudent() {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
-		int res = mapper.delete((long) 20);
+		int res = mapper.delete((long) 1);
 		Assert.assertEquals(1, res);
 
 	}

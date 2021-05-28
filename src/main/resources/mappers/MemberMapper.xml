@@ -12,8 +12,8 @@
 	</resultMap>
 	
 	<insert id="insert">
-		insert into member (email,password,name,regdate)
-		values(#{email},#{password},#{name},#{registerDateTime})
+		insert into member (id,email,password,name,regdate)
+		values(#{id},#{email},#{password},#{name},#{registerDateTime})
 
 	</insert>
 

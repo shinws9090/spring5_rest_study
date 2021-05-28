@@ -4,6 +4,7 @@ import java.util.List;
 
 import spring5_rest_study.dto.Member;
 
+
 public interface MemberListService {
 	List<Member> memberList();
 }
