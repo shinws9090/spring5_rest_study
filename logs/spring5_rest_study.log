@@ -1,0 +1,45 @@
+[DEBUG] [2021-05-28 09:39] testDataSource()
+[DEBUG] [2021-05-28 09:39] DataSource HikariDataSource (HikariPool-1)
+[DEBUG] [2021-05-28 09:39] LoginTimeout 30
+[DEBUG] [2021-05-28 09:40] testDataSource()
+[DEBUG] [2021-05-28 09:40] DataSource HikariDataSource (HikariPool-1)
+[DEBUG] [2021-05-28 09:40] LoginTimeout 30
+[DEBUG] [2021-05-28 09:43] testOpenSession()
+[DEBUG] [2021-05-28 09:43] session org.apache.ibatis.session.defaults.DefaultSqlSession@3cec79d3
+[DEBUG] [2021-05-28 09:55] ==>  Preparing: select * from member
+[DEBUG] [2021-05-28 09:55] ==> Parameters: 
+[TRACE] [2021-05-28 09:55] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 09:55] <==        Row: 1, test@test.co.kr, 0x1.7f55be552da41p-1, test, 2021-05-17 11:48:33.0
+[TRACE] [2021-05-28 09:55] <==        Row: 3, 0517115225test.co.kr, 0517115225, 0517115225, 2021-05-17 11:52:26.0
+[TRACE] [2021-05-28 09:55] <==        Row: 4, 0517120836test.co.kr, 0517120836, 0517120836, 2021-05-17 12:08:37.0
+[TRACE] [2021-05-28 09:55] <==        Row: 6, 0517121356test.co.kr, 0517121356, 0517121356, 2021-05-17 12:13:57.0
+[TRACE] [2021-05-28 09:55] <==        Row: 10, shinws9090@naver.com, 123, 신범건, 2021-05-20 11:11:59.0
+[TRACE] [2021-05-28 09:55] <==        Row: 11, shinws9090@naver.com2, 123, 신범건2, 2021-05-20 11:15:54.0
+[TRACE] [2021-05-28 09:55] <==        Row: 12, shinws9090@naver.com3, asdsad, 신범건, 2021-05-20 11:18:49.0
+[TRACE] [2021-05-28 09:55] <==        Row: 13, shinws9090@naver.com123, 123, 신범건123, 2021-05-20 11:25:03.0
+[TRACE] [2021-05-28 09:55] <==        Row: 14, shinws9090@naver.com1234, 1234, 신범건1234, 2021-05-20 11:30:59.0
+[TRACE] [2021-05-28 09:55] <==        Row: 15, shinws9090@naver.com12345, 12345, 신범건12345, 2021-05-20 11:45:33.0
+[TRACE] [2021-05-28 09:55] <==        Row: 16, shinws9090@naver.com123456, 123456, 신범건123456, 2021-05-20 11:50:22.0
+[TRACE] [2021-05-28 09:55] <==        Row: 17, shinws9090@naver.c, 123456, 신범건, 2021-05-20 11:50:40.0
+[TRACE] [2021-05-28 09:55] <==        Row: 18, shinws9090@naver.com2535235, 234234, 신범건, 2021-05-21 11:35:10.0
+[TRACE] [2021-05-28 09:55] <==        Row: 19, , , , 2021-05-21 11:40:10.0
+[TRACE] [2021-05-28 09:55] <==        Row: 20, shinws9090@naver.com123123123, 123123, 12312, 2021-05-21 11:46:45.0
+[TRACE] [2021-05-28 09:55] <==        Row: 21, 123123123123, 123123, 123213, 2021-05-21 11:48:23.0
+[TRACE] [2021-05-28 09:55] <==        Row: 22, shinws9090@naver.comqwewqe, qweqwe, qweqwe, 2021-05-21 12:06:08.0
+[TRACE] [2021-05-28 09:55] <==        Row: 23, asdsad, asdsad, asdasd, 2021-05-21 12:06:39.0
+[TRACE] [2021-05-28 09:55] <==        Row: 24, shinws9090@nav23er.com, 123, 신범건, 2021-05-21 12:48:39.0
+[TRACE] [2021-05-28 09:55] <==        Row: 25, shinws9090@naver.com123123123123, 123, 123213, 2021-05-21 14:41:44.0
+[TRACE] [2021-05-28 09:55] <==        Row: 26, sadsad, sdfsdf, sdjhfskd, 2021-05-21 18:49:12.0
+[TRACE] [2021-05-28 09:55] <==        Row: 29, shinws9090@naver.com123123123123123, 123123, 신범건, 2021-05-21 20:21:50.0
+[TRACE] [2021-05-28 09:55] <==        Row: 30, gffdfsfsf@tset.co.kr, 1111, test100, 2021-05-27 11:59:25.0
+[TRACE] [2021-05-28 09:55] <==        Row: 31, gff11dfsfsf@tset.co.kr, test100, 1111, 2021-05-27 12:05:10.0
+[TRACE] [2021-05-28 09:55] <==        Row: 32, gffasddfsfsf@tset.co.kr, 1111, test100, 2021-05-27 12:06:56.0
+[TRACE] [2021-05-28 09:55] <==        Row: 33, gffasddfasdsfsf@tset.co.kr, 1111, test100, 2021-05-27 12:07:08.0
+[TRACE] [2021-05-28 09:55] <==        Row: 34, gffasddfsf@tset.co.kr, null, test100, 2021-05-27 12:07:24.0
+[TRACE] [2021-05-28 09:55] <==        Row: 35, gff11dfsfadsf@tset.co.kr, test100, 1111, 2021-05-27 12:27:41.0
+[TRACE] [2021-05-28 09:55] <==        Row: 36, gfasaaaafsf@tset.co.kr, 1111, test100, 2021-05-27 12:28:16.0
+[TRACE] [2021-05-28 09:55] <==        Row: 37, fadsdafsf@tset.co.kr, test100, 11111111, 2021-05-27 12:44:35.0
+[TRACE] [2021-05-28 09:55] <==        Row: 38, gfasaaaafasdasdasdsf@tset.co.kr, 11111111, test100, 2021-05-27 14:29:02.0
+[TRACE] [2021-05-28 09:55] <==        Row: 39, gfas@tset.co.kr, 11111111, test100, 2021-05-27 15:08:12.0
+[TRACE] [2021-05-28 09:55] <==        Row: 40, gfssssas@tset.co.kr, 11111111, test100, 2021-05-27 15:08:36.0
+[DEBUG] [2021-05-28 09:55] <==      Total: 33
