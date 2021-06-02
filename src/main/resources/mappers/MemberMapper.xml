@@ -12,15 +12,18 @@
 	</resultMap>
 	
 	<insert id="insert">
-		insert into member (id,email,password,name,regdate)
-		values(#{id},#{email},#{password},#{name},#{registerDateTime})
-
+		insert into member (email,password,name,regdate)
+		values(#{email},#{password},#{name},now())
+		
+		<selectKey keyProperty="id" resultType="Long">
+		    SELECT LAST_INSERT_ID()
+		</selectKey>
 	</insert>
 
 	<update id="update">
 		update member
-		set PASSWORD= #{password}
-		where email = #{email}
+		set name= #{name} , PASSWORD= #{password}
+		where id = #{id}
 	</update>
 	
 	<delete id="delete">
